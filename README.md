@@ -2,10 +2,10 @@
 
 ## Download
 
-Download the package from GitHub
+Download from GitHub
 
 ```shell
-git clone https://github.com/coderaidershaun/chatbot-conversation-jarvis.git chatbot
+git clone git@github.com:rishabh-sonal/Aiva.git
 ```
 
 ## Setup backend
@@ -13,7 +13,7 @@ git clone https://github.com/coderaidershaun/chatbot-conversation-jarvis.git cha
 Change directory into backend
 
 ```shell
-cd chatbot/backend
+cd backend
 ```
 
 ### Setup virtual environment
@@ -30,12 +30,6 @@ Activate Virtual Environment (MAC)
 source venv/bin/activate
 ```
 
-Activate Virtual Environment (Windows)
-
-```shell
-source venv/Scripts/activate
-```
-
 Upgrade PIP
 
 ```shell
@@ -50,7 +44,7 @@ Install required Python packages
 pip3 install openai python-decouple fastapi "uvicorn[standard]" python-multipart
 ```
 
-Or use this alternative method (although this alternative method might not work if using Windows)
+Or use this alternative method 
 
 ```shell
 pip3 install -r requirements.txt
@@ -64,7 +58,7 @@ Create your .env file
 touch .env
 ```
 
-Update your .env file with the following. You can see your .env by typing sudo nano .env or just by clicking on the file if you are in VS Code.
+Update your .env file with the following
 
 ```plain
 OPEN_AI_ORG=enter-you-key-here
@@ -83,7 +77,7 @@ uvicorn main:app
 Alternatively, you can ensure your server resets every time you make a change by typing:
 
 ```shell
-uvicorn main:app -- reload
+uvicorn main:app --reload
 ```
 
 You can check your server is working by going to:
@@ -98,7 +92,7 @@ Change directory into frontend
 
 ```shell
 cd ..
-cd chatbot/frontend
+cd frontend
 ```
 
 Install packages

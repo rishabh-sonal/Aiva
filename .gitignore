@@ -28,3 +28,7 @@ __pycache__
 /backend/venv
 /frontend/node_modules
 /backend/.env
+/backend/__pycache__
+/backend/functions/__pycache__
+/backend/myFile.wav
+/backend/blob
