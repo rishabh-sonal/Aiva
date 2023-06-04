@@ -42,8 +42,8 @@ const Controller = () => {
             audio.src = createBlobURL(blob);
 
             // Append to audio
-            const rachelMessage = { sender: "Aiva", blobUrl: audio.src };
-            messagesArr.push(rachelMessage);
+            const aivaMessage = { sender: "Aiva", blobUrl: audio.src };
+            messagesArr.push(aivaMessage);
             setMessages(messagesArr);
 
             // Play audio

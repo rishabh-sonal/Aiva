@@ -28,8 +28,6 @@ def convert_text_to_speech(message):
      return
 
   if response.status_code == 200:
-      # with open("output.wav", "wb") as f:
-      #     f.write(audio_data)
       return response.content
   else:
     return
