@@ -58,7 +58,7 @@ const Controller = () => {
   };
 
   return (
-    <div className="h-screen overflow-y-hidden">
+    <div className="h-screen overflow-y-hidden backdrop-blur">
       {/* Title */}
       <Title setMessages={setMessages} />
 
@@ -111,7 +111,7 @@ const Controller = () => {
         </div>
 
         {/* Recorder */}
-        <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-sky-700 to-green-400">
+        <div className="fixed bottom-0 w-full py-6 border-t text-center opacity-70 bg-gradient-to-r from-sky-700 to-emerald-400">
           <div className="flex justify-center items-center w-full">
             <div>
               <RecordMessage handleStop={handleStop} />

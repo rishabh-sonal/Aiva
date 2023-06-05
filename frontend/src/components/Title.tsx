@@ -29,7 +29,7 @@ function Title({ setMessages }: Props) {
   };
 
   return (
-    <div className="flex justify-between items-center w-full p-4 bg-transparent bg-opacity-30 text-teal-700 font-bold shadow">
+    <div className="flex justify-between items-center w-full p-4 text-teal-700 font-bold shadow">
       <div className="italic">Aiva</div>
       <button
         onClick={resetConversation}
