@@ -59,7 +59,7 @@ const Controller = () => {
 
   return (
     // <div className="h-screen overflow-y-hidden backdrop-blur">
-    <div className="h-2/3 sm:w-1/3 fixed bottom-0 right-0 border-2 overflow-y-hidden backdrop-blur">
+    <div className="h-2/3 sm:w-1/3 fixed bottom-5 right-5 overflow-y-hidden rounded-lg backdrop-blur">
       {/* Title */}
       <Title setMessages={setMessages} />
 
@@ -112,7 +112,7 @@ const Controller = () => {
         </div>
 
         {/* Recorder */}
-        <div className="h-1/5 fixed bottom-0 w-full py-3 border-t text-center opacity-70 bg-gradient-to-r from-sky-700 to-emerald-400 place-content-center">
+        <div className="h-1/5 fixed bottom-0 w-full py-3 text-center opacity-70 bg-gradient-to-r from-sky-700 to-emerald-400 place-content-center">
           <div className="flex place-content-center w-full">
             <>
               <RecordMessage handleStop={handleStop} />
