@@ -23,7 +23,7 @@ function Title({ setMessages }: Props) {
           setMessages([]);
         }
       })
-      .catch((err) => {});
+      .catch((err) => { });
 
     setIsResetting(false);
   };
@@ -32,6 +32,7 @@ function Title({ setMessages }: Props) {
     <div className="flex justify-between items-center w-full p-4 text-teal-700 font-bold shadow">
       <div className="italic">Aiva</div>
       <button
+        title="Click"
         onClick={resetConversation}
         className={
           "transition-all duration-300 text-blue-300 hover:text-pink-500 " +
