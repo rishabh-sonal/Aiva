@@ -12,20 +12,25 @@ const RecordMessage = ({ handleStop }: Props) => {
       onStop={handleStop}
       render={({ status, startRecording, stopRecording }) => (
         <div className="mt-2">
-          <button
-            onMouseDown={startRecording}
-            onMouseUp={stopRecording}
-            className="bg-white p-4 rounded-full"
-          >
-            <RecordIcon
-              classText={
-                status == "recording"
-                  ? "animate-pulse text-red-500"
-                  : "text-sky-500"
-              }
-            />
-          </button>
-          <p className="mt-2 text-white font-light">{status}</p>
+          <span>
+            <input className="bg-white p-4 rounded-full"></input>
+          </span>
+          <span>
+            <button
+              onMouseDown={startRecording}
+              onMouseUp={stopRecording}
+              className="bg-white p-1 rounded-full"
+            >
+              <RecordIcon
+                classText={
+                  status == "recording"
+                    ? "animate-pulse text-red-500"
+                    : "text-sky-500"
+                }
+              />
+            </button>
+            <p className="mt-2 text-white font-light">{status}</p>
+          </span>
         </div>
       )}
     />
